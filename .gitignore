@@ -1,0 +1,9 @@
+venv/
+data/
+spark-warehouse/
+metastore_db/
+airflow/
+test.py
+derby.log
+test.db
+movies.json

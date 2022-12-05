@@ -1,0 +1,7 @@
+findspark
+pyspark==3.2.3
+pandas
+PyArrow
+requests
+apache-airflow
+pwd
