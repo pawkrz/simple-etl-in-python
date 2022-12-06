@@ -2,6 +2,7 @@
 - Windows platform
 - [spark 3.2.3](https://spark.apache.org/downloads.html)
 - [MovieLens 1M Dataset](https://grouplens.org/datasets/movielens/1m/)
+- docker desktop
 
 ## INSTALL VIRTUAL ENVIRONMENT
 ```s
@@ -18,8 +19,13 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## SETUP AIRLFOW
+# RUN ETL JOB IN DOCKER USING AIRFLOW
 ```s
-set AIRFLOW_HOME=%cd%\airflow
-airflow db init
+docker build -t pawkrz/etl .
+
+docker run -d -p 8080:8080 --name etl pawkrz/etl
 ```
+
+
+
+
